@@ -41,6 +41,24 @@ public extension User.Auth {
             self.token = token
         }
     }
+
+    struct ResetPasswordRequest: Codable {
+        public let email: String
+        
+        public init(email: String) {
+            self.email = email
+        }
+    }
+    
+    struct NewPasswordRequest: Codable {
+        public let token: String
+        public let password: String
+
+        public init(token: String, password: String) {
+            self.token = token
+            self.password = password
+        }
+    }
 }
 
 
