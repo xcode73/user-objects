@@ -31,9 +31,15 @@ public extension User.Auth {
     }
     
     struct Response: Codable {
-        let user: FeatherUser
-        let account: User.Account.Detail
-        let token: User.Token.Detail
+        public let user: FeatherUser
+        public let account: User.Account.Detail
+        public let token: User.Token.Detail
+        
+        public init(user: FeatherUser, account: User.Account.Detail, token: User.Token.Detail) {
+            self.user = user
+            self.account = account
+            self.token = token
+        }
     }
 }
 
