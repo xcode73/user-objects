@@ -7,7 +7,6 @@ let package = Package(
        .macOS(.v10_15)
     ],
     products: [
-        
         .library(name: "UserApi", targets: ["UserApi"]),
     ],
     dependencies: [
@@ -16,6 +15,9 @@ let package = Package(
     targets: [
         .target(name: "UserApi", dependencies: [
             .product(name: "FeatherApi", package: "feather-api"),
+        ]),
+        .testTarget(name: "UserApiTests", dependencies: [
+            .target(name: "UserApi")
         ]),
     ]
 )
