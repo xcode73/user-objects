@@ -12,6 +12,12 @@ public extension User {
     
     struct Role: FeatherApiModel {
         public typealias Module = User
+        
+        public struct Keys {
+            public static let Guest = "guest"
+            public static let Authenticated = "authenticated"
+            public static let Root = "root"
+        }
     }
 }
 

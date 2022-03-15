@@ -7,4 +7,7 @@
 
 import FeatherApi
 
-public enum User: FeatherApiModule {}
+public enum User: FeatherApiModule {
+    
+    
+}
