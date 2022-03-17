@@ -2,22 +2,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "user-api",
+    name: "user-objects",
     platforms: [
        .macOS(.v10_15)
     ],
     products: [
-        .library(name: "UserApi", targets: ["UserApi"]),
+        .library(name: "UserObjects", targets: ["UserObjects"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/feathercms/feather-api", .branch("main")),
+        .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
     ],
     targets: [
-        .target(name: "UserApi", dependencies: [
-            .product(name: "FeatherApi", package: "feather-api"),
+        .target(name: "UserObjects", dependencies: [
+            .product(name: "FeatherObjects", package: "feather-objects"),
         ]),
-        .testTarget(name: "UserApiTests", dependencies: [
-            .target(name: "UserApi")
+        .testTarget(name: "UserObjectsTests", dependencies: [
+            .target(name: "UserObjects")
         ]),
     ]
 )

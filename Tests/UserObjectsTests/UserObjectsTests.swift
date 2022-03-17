@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import UserApi
+@testable import UserObjects
 
-final class UserApiTests: XCTestCase {
+final class UserObjectsTests: XCTestCase {
 
     func testExample() async throws {
         let login = User.Auth.Request(email: "root@feathercms.com", password: "FeatherCMS")

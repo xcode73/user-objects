@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import FeatherApi
+import FeatherObjects
 
 public extension User {
     
-    struct Auth: FeatherApiModel {
+    struct Auth: FeatherObjectModel {
         public typealias Module = User
     }
 }

@@ -2,11 +2,11 @@
   "object": {
     "pins": [
       {
-        "package": "feather-api",
-        "repositoryURL": "https://github.com/feathercms/feather-api",
+        "package": "feather-objects",
+        "repositoryURL": "https://github.com/feathercms/feather-objects",
         "state": {
           "branch": "main",
-          "revision": "1154ba656bf90297e2189f5f572498a53fbed0af",
+          "revision": "169386ce3bf664fa768186467e4aec1caaee0fcf",
           "version": null
         }
       }
