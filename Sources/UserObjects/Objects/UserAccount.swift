@@ -60,20 +60,17 @@ public extension User.Account {
         public var lastName: String?
         public var email: String
         public var password: String
-        public var isRoot: Bool
         
         public init(imageKey: String? = nil,
                     firstName: String? = nil,
                     lastName: String? = nil,
                     email: String,
-                    password: String,
-                    isRoot: Bool = false) {
+                    password: String) {
             self.imageKey = imageKey
             self.firstName = firstName
             self.lastName = lastName
             self.email = email
             self.password = password
-            self.isRoot = isRoot
         }
     }
     
@@ -85,20 +82,17 @@ public extension User.Account {
         public var lastName: String?
         public var email: String
         public var password: String
-        public var isRoot: Bool
         
         public init(imageKey: String? = nil,
                     firstName: String? = nil,
                     lastName: String? = nil,
                     email: String,
-                    password: String,
-                    isRoot: Bool = false) {
+                    password: String) {
             self.imageKey = imageKey
             self.firstName = firstName
             self.lastName = lastName
             self.email = email
             self.password = password
-            self.isRoot = isRoot
         }
     }
     
@@ -110,20 +104,17 @@ public extension User.Account {
         public var lastName: String?
         public var email: String?
         public var password: String?
-        public var isRoot: Bool?
         
         public init(imageKey: String? = nil,
                     firstName: String? = nil,
                     lastName: String? = nil,
                     email: String? = nil,
-                    password: String? = nil,
-                    isRoot: Bool? = nil) {
+                    password: String? = nil) {
             self.imageKey = imageKey
             self.firstName = firstName
             self.lastName = lastName
             self.email = email
             self.password = password
-            self.isRoot = isRoot
         }
     }
 }
