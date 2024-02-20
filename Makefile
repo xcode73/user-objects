@@ -40,18 +40,18 @@ uninstall:
 	rm ./feather
 
 # =====================================================================
-# 	test
+# 	test-dev
 # =====================================================================
 
-dev:
+test-dev:
 	cd .. && \
-	git clone --branch test https://github.com/xcode73/feather-core.git && \
-	git clone --branch test https://github.com/xcode73/analytics-module.git && \
-	git clone --branch test https://github.com/xcode73/aggregator-module.git && \
-	git clone --branch test https://github.com/xcode73/blog-module.git && \
-	git clone --branch test https://github.com/xcode73/markdown-module.git && \
-	git clone --branch test https://github.com/xcode73/redirect-module.git && \
-	git clone --branch test https://github.com/xcode73/swifty-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/feather-core.git && \
+	git clone --branch test-dev https://github.com/xcode73/analytics-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/aggregator-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/blog-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/markdown-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/redirect-module.git && \
+	git clone --branch test-dev https://github.com/xcode73/swifty-module.git && \
 	cd feather
 
 update:
