@@ -1,23 +1,24 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "user-objects",
     platforms: [
-        .macOS(.v10_15),
+        .macOS(.v10_15)
     ],
     products: [
-        .library(name: "UserObjects", targets: ["UserObjects"]),
+        .library(name: "UserObjects", targets: ["UserObjects"])
     ],
     dependencies: [
-        .package(url: "https://github.com/xcode73/feather-objects", .branch("test-dev")),
+        .package(url: "https://github.com/xcode73/feather-objects", branch: "test-dev")
     ],
     targets: [
         .target(name: "UserObjects", dependencies: [
-            .product(name: "FeatherObjects", package: "feather-objects"),
+            .product(name: "FeatherObjects", package: "feather-objects")
         ]),
         .testTarget(name: "UserObjectsTests", dependencies: [
             .target(name: "UserObjects")
         ]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
